@@ -7,7 +7,7 @@ interface Props {
     onSearch: (searchText: string) => void;
 }
 
-function SearchInput({onSearch}: Props) {
+function SearchInput({}: Props) {
 	const ref = useRef<HTMLInputElement>(null);
 
 	return (

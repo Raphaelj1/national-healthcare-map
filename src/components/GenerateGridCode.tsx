@@ -20,13 +20,12 @@ interface Props {
 function GenerateGridCode({ description, location, countryCode }: Props) {
 	const [generatedGridCode, setGeneratedGridCode] = useState('');
 
-	const { data: gridCode, isLoading, post: generateGridCode, reset: resetGridCode } = useGenerate();
+	const { data: gridCode, isLoading, post: generateGridCode } = useGenerate();
 	const {
 		data: savedGridCode,
 		message,
 		isLoading: isSaveLoading,
-		post: saveGridCode,
-		reset: resetSavedGridCode
+		post: saveGridCode
 	} = useSave();
 
 	useEffect(() => {

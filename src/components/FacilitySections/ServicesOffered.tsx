@@ -1,4 +1,4 @@
-import { Box, VStack, HStack, Text } from '@chakra-ui/react';
+import { Box, VStack, Text } from '@chakra-ui/react';
 import DetailEntry from './DetailEntry';
 import hasValue from '../../utils/hasValue';
 

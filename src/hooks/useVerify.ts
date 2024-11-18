@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import apiClient from '../services/api-client';
-import { AxiosError } from 'axios';
 
 interface Response {
 	code: number;

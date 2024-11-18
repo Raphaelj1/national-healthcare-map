@@ -12,7 +12,7 @@ interface Props {
 function GoogleMaps({ onChangeFacility }: Props) {
 	// const [heatmapData, setHeatmapData] = useState<any[]>([]);
 	const [allFacilities, setAllFacilities] = useState<Facility[]>([]);
-	const [loading, setLoading] = useState<boolean>(true);
+	// const [loading, setLoading] = useState<boolean>(true);
 
 	const { isLoaded } = useJsApiLoader({
 		id: 'google-map-script',
@@ -28,7 +28,7 @@ function GoogleMaps({ onChangeFacility }: Props) {
 			} catch (error) {
 				console.error('Error fetching facilities :', error);
 			} finally {
-				setLoading(false); // Set loading to false once data is fetched
+				// setLoading(false); // Set loading to false once data is fetched
 			}
 		};
 
