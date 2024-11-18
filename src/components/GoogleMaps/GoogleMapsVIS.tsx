@@ -59,7 +59,7 @@ function GoogleMaps({ onChangeFacility }: Props) {
 			<Map
 				mapId={'1ff249d745fe7fd9'}
 				style={{ width: '100%' }}
-				defaultZoom={9}
+				defaultZoom={11}
 				defaultCenter={{ lat: 9.376592036050976, lng: 8.300009430814388 }}
 				onCameraChanged={handleMapCameraChange}
 			>
