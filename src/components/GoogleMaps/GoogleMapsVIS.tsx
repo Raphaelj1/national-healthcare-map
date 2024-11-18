@@ -9,7 +9,7 @@ import {
 import { Facility } from '../FacilityInfo';
 
 const apiKey = import.meta.env.VITE_GMAP_API_KEY;
-const mapID = import.meta.env.VITE_GMAP_ID;
+// const mapID = import.meta.env.VITE_GMAP_ID;
 
 interface Props {
 	onChangeFacility: (facility: Facility) => void;
@@ -57,7 +57,7 @@ function GoogleMaps({ onChangeFacility }: Props) {
 	return (
 		<APIProvider apiKey={apiKey}>
 			<Map
-				mapId={mapID}
+				mapId={'1ff249d745fe7fd9'}
 				style={{ width: '100%' }}
 				defaultZoom={11}
 				defaultCenter={{ lat: 9.376592036050976, lng: 8.300009430814388 }}
@@ -65,11 +65,12 @@ function GoogleMaps({ onChangeFacility }: Props) {
 			>
 				{visibleFacilities.map((facility, index) => (
 					<AdvancedMarker
+						title={facility.facilityInformation.facilityName}
 						key={index}
 						position={{ lat: facility.location.lat, lng: facility.location.lng }}
 						onClick={() => onChangeFacility(facility)}
 					>
-						<Pin glyphColor={'green'} borderColor={'green'} background={'#00AF54'} />
+						<Pin scale={0.75} glyphColor={'green'} borderColor={'green'} background={'#00AF54'} />
 					</AdvancedMarker>
 				))}
 			</Map>
