@@ -23,7 +23,7 @@ function GoogleMaps({ onChangeFacility }: Props) {
 	useEffect(() => {
 		const fetchAllFacilities = async () => {
 			try {
-				const response = await fetch('/data/facilities.json');
+				const response = await fetch('./data/facilities.json');
 				const facilities = (await response.json()) as Array<Facility>;
 				setAllFacilities(facilities);
 			} catch (error) {
