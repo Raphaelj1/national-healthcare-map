@@ -6,20 +6,20 @@ function SummaryStats() {
 		<Box>
 			<StatRoot>
 				<StatLabel fontSize="sm">Total Healthcare Facilities </StatLabel>
-				<StatValueText marginTop={-1}>36,417</StatValueText>
+				<StatValueText marginTop={-1}>33,715</StatValueText>
 			</StatRoot>
 
 			<StatRoot marginTop={2}>
 				<StatLabel fontSize="sm">Operational Facilities</StatLabel>
 				<StatValueText marginTop={-1} color="green.fg">
-					36,313
+					33,611
 				</StatValueText>
 			</StatRoot>
 
 			<StatRoot marginTop={2}>
 				<StatLabel fontSize="sm">Non-Operational Facilities</StatLabel>
 				<StatValueText marginTop={-1} color="red.fg">
-					103
+					104
 				</StatValueText>
 			</StatRoot>
 		</Box>
