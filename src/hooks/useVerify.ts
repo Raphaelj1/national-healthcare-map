@@ -37,13 +37,11 @@ const useVerify = () => {
 
 			if (response.data.code === 200) {
 				setData(response.data.data);
-				setIsLoading(false);
 			} else {
 				setError(response.data.message);
 			}
 		} catch (err: any) {
 			setError(err.message);
-			setIsLoading(false);
 		} finally {
 			setIsLoading(false);
 		}

@@ -398,7 +398,7 @@ function MapStory() {
 									(accurate to 3 meters).
 								</List.Item>
 								<List.Item>
-									Map any location using its referenced GridCode.
+									Map any facility using its referenced GridCode.
 								</List.Item>
 								<List.Item>
 									Provide route generation from any start or endpoint using
@@ -415,40 +415,16 @@ function MapStory() {
 							</Text>
 							<List.Root spaceY={2}>
 								<List.Item>
-									Generate Geocode Address: We can now create unique, precise
-									GridCodes for various locations.
+									Generate Gridcode Address: We can now create unique, precise
+									GridCodes for various facilities/locations.
 								</List.Item>
 								<List.Item>
-									Validate Geocode Address: The system ensures that the provided
+									Validate Gridcode Address: The system ensures that the provided
 									GridCode is valid and exists.
 								</List.Item>
 								<List.Item>
 									Calculate Travel Time: Users can view travel times between two
-									geocode addresses.
-								</List.Item>
-							</List.Root>
-						</Box>
-
-						<Box spaceY={2}>
-							<Heading>Challenges Faced</Heading>
-							<Text>
-								Despite our progress, we encountered limitations with the GridCode
-								API:
-							</Text>
-							<List.Root spaceY={2}>
-								<List.Item>
-									Displaying a Spot on a Map: While we could generate GridCodes,
-									the API lacked support for displaying the geocode address on an
-									interactive map.
-								</List.Item>
-								<List.Item>
-									Navigation and Route Generation: The API doesn’t provide routing
-									capabilities, making it impossible to calculate or display
-									routes between two points.
-								</List.Item>
-								<List.Item>
-									Calculate Travel Time: Users can view travel times between two
-									geocode addresses.
+									gridcode addresses.
 								</List.Item>
 							</List.Root>
 						</Box>
