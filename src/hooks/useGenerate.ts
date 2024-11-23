@@ -10,13 +10,6 @@ interface GeneratedGridCode {
 	longitude: string;
 }
 
-// type to get generate gridcode
-// interface LocationData {
-// 	countryCode: string;
-// 	lat: string;
-// 	long: string;
-// }
-
 const useGenerate = () => usePost<GeneratedGridCode>('/gridcode/api/generate');
 
 export default useGenerate;
