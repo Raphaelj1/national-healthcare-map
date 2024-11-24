@@ -1,7 +1,7 @@
 import { Box, IconButton } from '@chakra-ui/react';
 import { Facility } from './FacilityInfo';
-// import GoogleMaps from './GoogleMaps';
-import GoogleMapsVIS from './GoogleMaps/GoogleMapsVIS';
+import GMapCluster from './GoogleMaps';
+// import {GoogleMapsVIS} from './GoogleMaps';
 import { LuLayers } from 'react-icons/lu';
 
 interface Props {
@@ -17,8 +17,8 @@ function MapContainer({ onChangeFacility }: Props) {
 			borderRadius={4}
 			position="relative"
 		>
-			{/* <GoogleMaps onChangeFacility={onChangeFacility} /> */}
-			<GoogleMapsVIS onChangeFacility={onChangeFacility} />
+			<GMapCluster onChangeFacility={onChangeFacility} />
+			{/* <GoogleMapsVIS onChangeFacility={onChangeFacility} /> */}
 			<Box position="absolute" zIndex={1} top="64px" right="10px">
 				<IconButton aria-label="Filter Layers" color="black" backgroundColor="white">
 					<LuLayers />
