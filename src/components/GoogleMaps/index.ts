@@ -1,4 +1,4 @@
-import GoogleMaps from './GoogleMaps';
 import GoogleMapsVIS from './GoogleMapsVIS';
+import GMapCluster from './GMapCluster';
 
-export {GoogleMapsVIS, GoogleMaps as default};
+export {GoogleMapsVIS, GMapCluster as default};
