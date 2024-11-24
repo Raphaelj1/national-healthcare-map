@@ -1,4 +1,4 @@
-import { Box, Heading, Link, Text } from '@chakra-ui/react';
+import { Box, Heading, Text } from '@chakra-ui/react';
 import SummaryImage from './SummaryImage';
 import SummaryStats from './SummaryStats';
 
