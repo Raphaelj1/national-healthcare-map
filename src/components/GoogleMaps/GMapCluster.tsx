@@ -20,7 +20,6 @@ function GMapCluster({ onChangeFacility }: Props) {
 				const response = await fetch('/data/facilities.json');
 				const facilities = (await response.json()) as Array<Facility>;
 				setFacilities(facilities);
-				console.log(facilities.length);
 			} catch (error) {
 				console.error('Error fetching facilities:', error);
 			}
