@@ -4,7 +4,7 @@ import SummaryStats from './SummaryStats';
 
 function NationSummary() {
 	return (
-		<Box width="100%">
+		<Box width="100%" paddingBottom={8}>
 			<SummaryImage />
 			<Heading fontSize="lg" marginTop={4}>
 				Healthcare Infrastructure Map of Nigeria
