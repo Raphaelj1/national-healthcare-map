@@ -51,11 +51,11 @@ function MapContainer({ onChangeFacility }: Props) {
 			>
 				<IconButton
 					aria-label="Filter Layers"
-					color="black"
+					color="#eee"
 					backgroundColor="white"
 					onClick={() => setIsShowFilter((prev) => !prev)}
 				>
-					<LuLayers />
+					<LuLayers color='#666' />
 				</IconButton>
 			</Box>
 			{isShowFilter && (
