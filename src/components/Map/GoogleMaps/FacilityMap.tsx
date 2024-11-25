@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useMap, Pin, AdvancedMarker, Marker } from '@vis.gl/react-google-maps';
 import SuperCluster from 'supercluster';
-import { Facility } from '../FacilityInfo';
+import { Facility } from '../../FacilityInfo';
 
 interface Props {
 	facilities: Facility[];
