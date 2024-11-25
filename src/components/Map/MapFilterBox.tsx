@@ -65,7 +65,7 @@ function MapFilterBox({ facilities, setFilteredFacilities, isShowFilter, setIsSh
 		setFilteredFacilities(filtered);
 	};
 
-	const checkFacilitiesCount = useMemo(() => {
+	useMemo(() => {
 		const filtered = applyFilters(facilities, filters);
 		setFacilityCount(filtered.length);
 	}, [facilities, filters]);
