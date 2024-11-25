@@ -33,7 +33,7 @@ function FacilityMap({ facilities, onFacilitySelect }: Props) {
 		if (!facilities.length) return;
 
 		const clusterer = new SuperCluster({
-			radius: 80, // Cluster radius in pixels
+			radius: 81, // Cluster radius in pixels
 			maxZoom: 16, // Max zoom level for clustering
 			minPoints: 3, // Minimum points to form a cluster
 		});
