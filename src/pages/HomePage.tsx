@@ -4,7 +4,7 @@ import useCountries from '../hooks/useCountries';
 import NavBar from '../components/NavBar';
 import LeftPanel from '../components/LeftPanel';
 import RightPanel from '../components/RightPanel';
-import MapContainer from '../components/MapContainer';
+import Map from '../components/Map';
 import { Facility } from '../components/FacilityInfo';
 
 function HomePage() {
@@ -39,7 +39,7 @@ function HomePage() {
 				<LeftPanel countries={countries} />
 			</GridItem>
 			<GridItem area={'main'}>
-				<MapContainer onChangeFacility={setFacility} />
+				<Map onChangeFacility={setFacility} />
 			</GridItem>
 			<GridItem area={'right'} display={{ base: 'none', md: 'block' }}>
 				<RightPanel facility={facility} />
