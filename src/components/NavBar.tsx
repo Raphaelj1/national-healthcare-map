@@ -39,25 +39,21 @@ function NavBar({ isHome = false }: Props) {
 						width={{ base: '250px', lg: '350px', xl: '450px' }}
 						marginLeft={{ base: 4, lg: 44 }}
 					>
-						                                                   
 						<Link
-							// href="https://www.google.com/maps/d/viewer?mid=1cmzRGcXXSVxzXk0bMl1LBAZd60jLyik&femb=1&ll=9.418711781079402%2C8.390184839001025&z=6"
-							href="https://nigerian-healthcare-map.netlify.app/"
+							href="https://www.google.com/maps/d/viewer?mid=1cmzRGcXXSVxzXk0bMl1LBAZd60jLyik&femb=1&ll=9.418711781079402%2C8.390184839001025&z=6"
+							// href="https://nigerian-healthcare-map.netlify.app/"
 							target="blank"
 							marginLeft={2}
 						>
-							                                
 							<Button
 								size="xs"
 								fontWeight="normal"
 								colorPalette="green"
 								letterSpacing={0.5}
 							>
-								 Click to view National Map <RxOpenInNewWindow />
+								Click to view Regional Map <RxOpenInNewWindow />
 							</Button>
-							                  
 						</Link>
-						                                      
 					</Box>
 				)}
 			</HStack>
