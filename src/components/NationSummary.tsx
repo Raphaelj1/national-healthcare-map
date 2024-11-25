@@ -1,4 +1,4 @@
-import { Box, Heading, Link, Text } from '@chakra-ui/react';
+import { Box, Heading, Text } from '@chakra-ui/react';
 import SummaryImage from './SummaryImage';
 import SummaryStats from './SummaryStats';
 
@@ -13,20 +13,6 @@ function NationSummary() {
 				The map offers crucial insights for decision-makers to evaluate healthcare coverage
 				and identify areas for improvement. Click on markers to reveal detailed facility
 				information, aiding informed planning and policy-making.
-			</Text>
-			<Text fontSize="sm" marginTop={2} color="gray.focusRing">
-				Explore our{' '}
-				<Link
-					variant="underline"
-					href="https://nigerian-healthcare-map.netlify.app/"
-					target="blank"
-					colorPalette="green"
-					outline="none"
-					display="inline"
-				>
-					innovative solution
-				</Link>{' '}
-				using the green button.
 			</Text>
 			<Box marginTop={6}>
 				<SummaryStats />
