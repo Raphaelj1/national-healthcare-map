@@ -45,7 +45,7 @@ function MapContainer({ onChangeFacility }: Props) {
 			<Box
 				position="absolute"
 				zIndex={1}
-				top="64px"
+				top="120px"
 				right="10px"
 				shadow="0px 0px 1px 2px rgba(0, 0, 0, .055)"
 			>
