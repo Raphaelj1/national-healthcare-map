@@ -56,7 +56,7 @@ function FacilityInfo({ facility }: Props) {
 					countryCode="NG"
 				/>
 			)}
-			<VStack alignItems="flex-start" gapY={6} marginTop={6} paddingBottom={6}>
+			<VStack alignItems="flex-start" gapY={6} marginTop={6} paddingBottom={8}>
 				<FacilityInformation facilityInformation={facility.facilityInformation} />
 				<LocationDetails locationDetails={facility.locationDetails} />
 				<OperationalHours operationalHours={facility.operationalHours} />
