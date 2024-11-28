@@ -51,7 +51,6 @@ function FacilityInfo({ facility }: Props) {
 			{facility && (
 				<GenerateGridCode
 					description={facility.facilityInformation.facilityName}
-					// location={{ lat: 12.354230681561877, lng: 12.370832994570101 }}
 					location={facility.location}
 					countryCode="NG"
 				/>
