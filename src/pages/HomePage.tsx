@@ -42,7 +42,7 @@ function HomePage() {
 				<Map onChangeFacility={setFacility} />
 			</GridItem>
 			<GridItem area={'right'} display={{ base: 'none', md: 'block' }}>
-				<RightPanel facility={facility} />
+				<RightPanel facility={facility} onResetFacility={setFacility} />
 			</GridItem>
 		</Grid>
 	);

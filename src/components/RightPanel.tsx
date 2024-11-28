@@ -6,11 +6,8 @@ import FacilityInfo from './FacilityInfo';
 import { Facility } from './FacilityInfo';
 
 interface Props {
-	// countries: {
-	// 	label: string;
-	// 	value: string;
-	// }[];
 	facility: Facility | null;
+	onResetFacility: (facility: null) => void;
 }
 
 interface TabItem {
@@ -27,7 +24,7 @@ const initialTabs: TabItem[] = [
 	},
 ];
 
-function RightPanel({ facility }: Props) {
+function RightPanel({ facility, onResetFacility }: Props) {
 	const [tabs, setTabs] = useState<TabItem[]>(initialTabs);
 	const [selectedTab, setSelectedTab] = useState<string>(initialTabs[0].id);
 
@@ -53,6 +50,7 @@ function RightPanel({ facility }: Props) {
 		if (tabs.length > 1) {
 			const newTabs = [...tabs].slice(0, 1);
 			setTabs(newTabs);
+			onResetFacility(null);
 		}
 	};
 
