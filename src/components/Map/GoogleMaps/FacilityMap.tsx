@@ -125,7 +125,7 @@ function FacilityMap({ facilities, onFacilitySelect }: Props) {
 							fillColor: 'green',
 							fillOpacity: 0.8,
 							strokeWeight: 2,
-							strokeColor: 'white'
+							strokeColor: 'white',
 						}}
 					/>
 				);
@@ -140,7 +140,13 @@ function FacilityMap({ facilities, onFacilitySelect }: Props) {
 						lat: marker.geometry.coordinates[1],
 						lng: marker.geometry.coordinates[0],
 					}}
-					onClick={() => onFacilitySelect(marker.properties)}
+					onClick={(e) => {
+						onFacilitySelect(marker.properties);
+						map?.panTo({
+							lat: marker.geometry.coordinates[1],
+							lng: marker.geometry.coordinates[0],
+						});
+					}}
 				>
 					<Pin
 						scale={0.75}
