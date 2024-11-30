@@ -140,7 +140,7 @@ function FacilityMap({ facilities, onFacilitySelect }: Props) {
 						lat: marker.geometry.coordinates[1],
 						lng: marker.geometry.coordinates[0],
 					}}
-					onClick={(e) => {
+					onClick={() => {
 						onFacilitySelect(marker.properties);
 						map?.panTo({
 							lat: marker.geometry.coordinates[1],
