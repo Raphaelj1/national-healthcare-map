@@ -41,7 +41,6 @@ function NavBar({ isHome = false }: Props) {
 					>
 						<Link
 							href="https://www.google.com/maps/d/viewer?mid=1cmzRGcXXSVxzXk0bMl1LBAZd60jLyik&femb=1&ll=9.418711781079402%2C8.390184839001025&z=6"
-							// href="https://nigerian-healthcare-map.netlify.app/"
 							target="blank"
 							marginLeft={2}
 						>
