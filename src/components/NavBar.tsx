@@ -20,10 +20,12 @@ function NavBar({ isHome = false }: Props) {
 	return (
 		<HStack paddingX={'32px'} paddingY={'16px'} justifyContent={'space-between'}>
 			<HStack>
-				<Image src={logo} boxSize={'24px'} objectFit={'contain'} />
-				<Text display={{ base: 'block', md: 'block' }} whiteSpace="nowrap">
-					Labondo
-				</Text>
+				<Link href="https://national-healthcare-map.vercel.app" outline="none">
+					<Image src={logo} boxSize={'24px'} objectFit={'contain'} />
+					<Text display={{ base: 'block', md: 'block' }} whiteSpace="nowrap">
+						Labondo
+					</Text>
+				</Link>
 				{/* {isHome && (
 					<Box
 						display={{base: 'none', md: 'block'}}
